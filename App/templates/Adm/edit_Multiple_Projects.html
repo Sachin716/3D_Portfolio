@@ -85,10 +85,9 @@
         </div>
         <div class="max-w-[1750px] w-full flex flex-row">
           <div class="max-w-[1750px] w-full flex flex-row">
-             <div
+            <div
               class="flex flex-wrap-reverse py-10 w-full justify-center items-center gap-10"
             >
-            {% for i in models %}
               <div
                 class="flex w-[200px] h-[225px] flex-col justify-center items-center"
               >
@@ -98,13 +97,11 @@
                   height="200"
                   decoding="async"
                   data-nimg="1"
-                  style="color: transparent; object-fit:cover; width:200px; height:200px"
-                  src="{{i.Thumbnail}}"
-                  
+                  style="color: transparent"
+                  src="{% static '/Images/images.png' %}"
                 />
-                <div>{{i.Name}}</div>
+                <div>item 1</div>
               </div>
-              {% endfor %}
               <div
                 class="flex w-[200px] h-[225px] flex-col justify-center items-center"
               >
@@ -114,7 +111,7 @@
                   height="200"
                   decoding="async"
                   data-nimg="1"
-                  style="color: transparent; object-fit:cover; width:200px; height:200px"
+                  style="color: transparent"
                   src="{% static '/Images/images.png' %}"
                 />
                 <div>New Item</div>

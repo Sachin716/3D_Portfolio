@@ -2,6 +2,7 @@ from django.db import models
 
 class category(models.Model):
     Name =  models.CharField(max_length=100)
+    Thumbnail = models.ImageField(upload_to="staticfiles/Images/Category_Thumbnails")
     Description = models.CharField(max_length=1000)
 
     def __str__(self):
